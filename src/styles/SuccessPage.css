@@ -1,0 +1,83 @@
+/* 🔹 General Page Styling */
+.success-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #121212);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 🔹 Stylish Confirmation Box */
+.success-container {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 255, 170, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🔹 Animated Title */
+.success-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ffcc, #0077ff);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(0, 255, 170, 0.7);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 10px rgba(0, 255, 170, 0.7);
+  }
+  to {
+    text-shadow: 0px 0px 20px rgba(0, 255, 170, 1);
+  }
+}
+
+/* 🔹 Message Text */
+.success-message {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  opacity: 0.9;
+}
+
+/* 🔹 Stylish Button */
+.home-button {
+  background: linear-gradient(90deg, #007bff, #00ffcc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 15px rgba(0, 255, 170, 0.3);
+}
+
+.home-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 255, 170, 0.5);
+}
+
+
+
+/* 🔹 Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

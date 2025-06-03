@@ -1,0 +1,171 @@
+/* General Styles */
+.payment-page {
+  background-color: #0a0a0a; /* Dark background for a luxurious feel */
+  color: #fff;
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-container {
+  max-width: 800px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.payment-header {
+  font-size: 2.8rem;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.villa-name {
+  font-size: 2.2rem;
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.villa-price {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.villa-price strong {
+  color: #ffd700;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  background-color: #121212;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Payment Details Section */
+.payment-details {
+  background-color: rgba(255, 215, 0, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+/* Button Styles */
+.pay-btn {
+  display: block;
+  width: 100%;
+  background-color: #ffd700;
+  color: #121212;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #e6c300;
+  transform: translateY(-2px);
+}
+
+.pay-btn:active {
+  transform: translateY(0);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  color: #ccc;
+}
+
+/* Additional Premium Touches */
+.villa-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.villa-description {
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-container {
+      padding: 20px;
+  }
+
+  .payment-header {
+      font-size: 2.2rem;
+  }
+
+  .villa-name {
+      font-size: 1.8rem;
+  }
+
+  .villa-price {
+      font-size: 1.2rem;
+  }
+}
